@@ -17,16 +17,7 @@ get:
       content:
         application/json:
           schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: true
-              message:
-                type: string
-                example: Product retrieved successfully
-              data:
-                $ref: '../components/product.yaml'
+            $ref: '../components/single.product.yaml'
     '404':
       description: Product not found
       content:
@@ -74,16 +65,7 @@ put:
       content:
         application/json:
           schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: true
-              message:
-                type: string
-                example: Product updated successfully
-              data:
-                $ref: '../components/product.yaml'
+            $ref: '../components/single.product.yaml'
     '400':
       description: Validation Failed
       content:

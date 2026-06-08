@@ -9,7 +9,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "6234766a-d68a-45b2-88da-3af85b3557d0",
+                            "id": "dcd53ff0-cbd7-4d35-9842-a34e93d472f2",
                             "name": "Register a new user",
                             "request": {
                                 "name": "Register a new user",
@@ -53,7 +53,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "b58cedf8-a2c5-488a-a821-d01b3898f150",
+                                    "id": "05a17953-4681-49a5-85ba-52af408772d0",
                                     "name": "User registered successfully",
                                     "originalRequest": {
                                         "url": {
@@ -102,7 +102,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "76fc6f96-83a4-45ad-aef7-1919d2834ed9",
+                                    "id": "1726e8ea-95a1-4f2e-843f-277d91d902b7",
                                     "name": "Bad Request / Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -151,7 +151,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "91188a28-b2c5-430f-9334-8d3c84d2b89a",
+                                    "id": "ca616eb8-b922-4f0c-b3cd-8e53db63a5f8",
                                     "name": "Conflict - Email already exists",
                                     "originalRequest": {
                                         "url": {
@@ -212,7 +212,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "fdc69c73-4818-413c-9780-20e0ebc3ff18",
+                            "id": "48dd93de-8eba-4e1b-8a87-9364e8d99584",
                             "name": "User Login",
                             "request": {
                                 "name": "User Login",
@@ -256,7 +256,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "17635ce3-7fc2-4521-ad64-a7bb2f8c3e6a",
+                                    "id": "68d76c0f-e1bc-4fb2-9a72-4732fbb16376",
                                     "name": "Login successful",
                                     "originalRequest": {
                                         "url": {
@@ -305,7 +305,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "4b56afba-1684-4870-a3b8-3c10879905ed",
+                                    "id": "4c7e7364-4245-4d95-a465-23896c517c3b",
                                     "name": "Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -354,7 +354,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "45384a2e-c4dd-4db6-bf32-7f1a02272b4e",
+                                    "id": "4b63b52b-e083-4acb-a4db-e1f2bcd4cd6c",
                                     "name": "Invalid email or password",
                                     "originalRequest": {
                                         "url": {
@@ -415,7 +415,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "8807381f-1a10-4491-a45a-4a201c5928da",
+                            "id": "fd8f915b-35b2-4bc9-8e33-46669fb68498",
                             "name": "Refresh Access Token",
                             "request": {
                                 "name": "Refresh Access Token",
@@ -459,7 +459,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "fcd01238-b990-4b97-a173-15bc19397497",
+                                    "id": "e5f4db72-eca6-4ca3-ba60-c1f98aa2d537",
                                     "name": "Token refreshed successfully",
                                     "originalRequest": {
                                         "url": {
@@ -508,7 +508,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "a3130068-319d-4144-8d1c-6c15647c4e44",
+                                    "id": "68de7e6e-b646-4ce2-bc9d-bbbfd27e3550",
                                     "name": "Missing refresh token",
                                     "originalRequest": {
                                         "url": {
@@ -557,7 +557,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "fe19229d-f2f5-4979-a577-f5cfa38ce719",
+                                    "id": "366cff65-5848-43fe-b5e4-bfac122bb0a5",
                                     "name": "Invalid or expired refresh token",
                                     "originalRequest": {
                                         "url": {
@@ -620,7 +620,7 @@
             "description": "",
             "item": [
                 {
-                    "id": "a64ab17f-357a-415a-a42e-035a4bb4bccf",
+                    "id": "548f3621-0a5d-43d9-8456-4c066940685b",
                     "name": "List active products",
                     "request": {
                         "name": "List active products",
@@ -687,7 +687,7 @@
                     },
                     "response": [
                         {
-                            "id": "d0af4c6c-3674-476f-98f3-0f3efeb09f4d",
+                            "id": "ae83b0a2-06e1-45a3-8c5b-96878cd86200",
                             "name": "Products retrieved successfully",
                             "originalRequest": {
                                 "url": {
@@ -765,7 +765,7 @@
                     }
                 },
                 {
-                    "id": "778c91b7-e909-4ce2-91c9-2bac6f78ba34",
+                    "id": "08191ad2-8189-4940-8853-a15e82e70fda",
                     "name": "Create a new product",
                     "request": {
                         "name": "Create a new product",
@@ -816,7 +816,7 @@
                     },
                     "response": [
                         {
-                            "id": "f0516612-03b0-4cfe-a34c-1daa9a5d6e39",
+                            "id": "f457d977-9579-47bb-806d-fbe7b01b9670",
                             "name": "Product created successfully",
                             "originalRequest": {
                                 "url": {
@@ -872,7 +872,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "44effd0a-6383-4c61-bc30-793b55ad8dd5",
+                            "id": "8e40ecf5-b371-4a66-92a5-dbadb9242ee5",
                             "name": "Validation Failed / Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -928,7 +928,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "a47b94fe-f9d3-4568-9bec-e574b1f5e2aa",
+                            "id": "dab45e75-7f45-440e-b6e5-1d2192249477",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -984,7 +984,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "c7d4fc90-c065-44cc-82a1-587332cbcd74",
+                            "id": "29ece6f3-adf4-4d6d-b5a2-687896c606aa",
                             "name": "Forbidden (Only ADMIN can access)",
                             "originalRequest": {
                                 "url": {
@@ -1050,7 +1050,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "7fc3724c-01a3-40c0-84ba-264829033843",
+                            "id": "90d6df71-9da0-43ef-bfd7-2ea9297b059b",
                             "name": "List soft-deleted products (Archive)",
                             "request": {
                                 "name": "List soft-deleted products (Archive)",
@@ -1126,7 +1126,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "66ab8304-072b-4320-9c06-4ab92b76a790",
+                                    "id": "ec76cdf3-b027-49d7-8e1e-b4b747512348",
                                     "name": "Archived products retrieved successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1207,7 +1207,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "859248e0-0bb9-43af-aee9-2981aa84e7fa",
+                                    "id": "4355b4ef-7587-4e50-99dc-8c22d6b03f9b",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -1288,7 +1288,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "506fd4a0-db86-4f6a-b6a1-062c8b72d71f",
+                                    "id": "58c2da96-3f77-4642-a86f-1b766fd38ecb",
                                     "name": "Forbidden (Only ADMIN can access)",
                                     "originalRequest": {
                                         "url": {
@@ -1381,7 +1381,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "583c7d36-ab6e-4e2b-bfe0-3aaa55806d78",
+                            "id": "ec24b4fe-df40-4b26-ac42-45d4c79b1450",
                             "name": "Get product by ID",
                             "request": {
                                 "name": "Get product by ID",
@@ -1423,7 +1423,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "26f00435-dab1-4f22-8167-4cdb3f6587d7",
+                                    "id": "156c8578-1615-4b9a-8a3c-7464a7d2f021",
                                     "name": "Product retrieved successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1470,7 +1470,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "8f47be7c-6831-495d-9fce-9d98651ac283",
+                                    "id": "82582486-0db7-4ff8-aa55-4ca15bc9aa6c",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -1523,7 +1523,7 @@
                             }
                         },
                         {
-                            "id": "9de31e6d-9a0b-4576-8dea-a2c5793549d8",
+                            "id": "226f4e78-dca2-4b7c-9c26-f82f6230c9d0",
                             "name": "Update product details",
                             "request": {
                                 "name": "Update product details",
@@ -1586,7 +1586,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "cd6c16cc-0c50-4a8c-8b04-1361c831c007",
+                                    "id": "59f5d311-6fe0-4527-89df-f60d1b46902d",
                                     "name": "Product updated successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1654,7 +1654,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "1375a889-9c3d-4506-a020-3ab81e33bf60",
+                                    "id": "ac492aa0-4aa3-4630-b4dc-779c9d1007e7",
                                     "name": "Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -1722,7 +1722,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "8c7b0d57-e4db-4586-ab2b-73e9aa90b82c",
+                                    "id": "a220b431-ff6d-43e4-aff0-7f94cd5c9560",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -1790,7 +1790,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "1b3af2f2-3e4b-4ceb-89d7-e41d270bab50",
+                                    "id": "a389b0ff-f943-40ef-b350-2013924fdaef",
                                     "name": "Forbidden",
                                     "originalRequest": {
                                         "url": {
@@ -1858,7 +1858,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "c4f1a044-7147-4a1b-9e81-2d0657741762",
+                                    "id": "991bcc7b-1039-41e6-ba5d-a4198003fcb4",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -1932,7 +1932,7 @@
                             }
                         },
                         {
-                            "id": "33f123a3-abac-4f51-b525-232065817bb5",
+                            "id": "5cd4dd49-647d-4969-8b8b-0ced696c4be1",
                             "name": "Soft delete a product",
                             "request": {
                                 "name": "Soft delete a product",
@@ -1982,7 +1982,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "07756d6e-7fa4-45df-bf6d-012a4736866b",
+                                    "id": "5c850bed-8fe8-4b0f-8fe7-f81643afd91f",
                                     "name": "Product deleted successfully",
                                     "originalRequest": {
                                         "url": {
@@ -2037,7 +2037,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "774f5348-294f-4928-8088-615fcb5f6bb8",
+                                    "id": "8b8f0b7d-63b3-4526-a6c7-2f532f02f5a4",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -2092,7 +2092,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "c586a23c-e1ef-46ab-bb24-1a6c9ce07824",
+                                    "id": "77eb4fa6-c7db-47d0-81b8-8dfa3a957cb6",
                                     "name": "Forbidden",
                                     "originalRequest": {
                                         "url": {
@@ -2147,7 +2147,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "de0b16c8-3199-47fe-b29e-4819fb0abce1",
+                                    "id": "b4d8e8d2-bf8e-429d-86d6-1430c7516f63",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -2216,7 +2216,7 @@
             "description": "",
             "item": [
                 {
-                    "id": "ffeea1dc-b295-4589-baa3-231cb4285e94",
+                    "id": "4e50d8af-959b-4f1a-b57f-82763ce8a666",
                     "name": "List orders",
                     "request": {
                         "name": "List orders",
@@ -2257,7 +2257,7 @@
                                         "type": "text/plain"
                                     },
                                     "key": "status",
-                                    "value": "PENDING"
+                                    "value": "CANCELLED"
                                 },
                                 {
                                     "disabled": false,
@@ -2309,7 +2309,7 @@
                     },
                     "response": [
                         {
-                            "id": "fe15de6f-a970-4b07-803e-ff06345582fc",
+                            "id": "a0ebc55c-f6af-43d2-b3bb-7a67dae781a3",
                             "name": "Orders retrieved successfully",
                             "originalRequest": {
                                 "url": {
@@ -2345,7 +2345,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "PENDING"
+                                            "value": "CANCELLED"
                                         },
                                         {
                                             "disabled": false,
@@ -2402,12 +2402,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"COMPLETED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"PENDING\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"total\": \"<integer>\",\n    \"page\": \"<integer>\",\n    \"limit\": \"<integer>\",\n    \"totalPages\": \"<integer>\"\n  }\n}",
+                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"CANCELLED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"PENDING\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"total\": \"<integer>\",\n    \"page\": \"<integer>\",\n    \"limit\": \"<integer>\",\n    \"totalPages\": \"<integer>\"\n  }\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "e4b97d53-cf63-495c-9153-5edd6ebd5acc",
+                            "id": "0a2daadd-3229-4a65-9136-d910f9ad0ecf",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2443,7 +2443,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "PENDING"
+                                            "value": "CANCELLED"
                                         },
                                         {
                                             "disabled": false,
@@ -2511,7 +2511,7 @@
                     }
                 },
                 {
-                    "id": "345f48e5-6161-408d-a4ec-4f6df5c4bfa5",
+                    "id": "8c7f0baa-2118-4c09-ba3a-b56d0933032e",
                     "name": "Create a new order",
                     "request": {
                         "name": "Create a new order",
@@ -2562,7 +2562,7 @@
                     },
                     "response": [
                         {
-                            "id": "caade687-713d-496b-992c-45783bc27675",
+                            "id": "97bd5ae7-8980-4d04-b33b-aa6f3ac1318d",
                             "name": "Order created successfully",
                             "originalRequest": {
                                 "url": {
@@ -2618,7 +2618,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "e12fe9fd-4967-419d-9bd3-21c2aa66e5b4",
+                            "id": "ee833aa0-e86f-4760-a576-5795b82596b2",
                             "name": "Bad Request (Invalid parameters / insufficient stock)",
                             "originalRequest": {
                                 "url": {
@@ -2674,7 +2674,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "ba8b492c-97d2-42a1-850b-83bea3277208",
+                            "id": "5a8754aa-cb88-4eeb-8002-a6c71d0a7da6",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2746,7 +2746,7 @@
         }
     ],
     "info": {
-        "_postman_id": "292be171-09cc-45e2-80af-1b8693662a1e",
+        "_postman_id": "23887f16-f771-4350-b83c-e2b76f46053d",
         "name": "Order & Inventory Management System API",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {

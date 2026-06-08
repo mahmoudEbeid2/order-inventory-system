@@ -220,16 +220,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Product created successfully
-                  data:
-                    $ref: '#/components/schemas/product'
+                $ref: '#/components/schemas/single.product'
         '400':
           description: Validation Failed / Bad Request
           content:
@@ -318,16 +309,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Product retrieved successfully
-                  data:
-                    $ref: '#/components/schemas/product'
+                $ref: '#/components/schemas/single.product'
         '404':
           description: Product not found
           content:
@@ -374,16 +356,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Product updated successfully
-                  data:
-                    $ref: '#/components/schemas/product'
+                $ref: '#/components/schemas/single.product'
         '400':
           description: Validation Failed
           content:
@@ -552,16 +525,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Order created successfully
-                  data:
-                    $ref: '#/components/schemas/order'
+                $ref: '#/components/schemas/single.order'
         '400':
           description: Bad Request (Invalid parameters / insufficient stock)
           content:
@@ -593,6 +557,10 @@ components:
       $ref: '#/components/schemas/paginated.products'
     PaginatedOrdersResponse:
       $ref: '#/components/schemas/paginated.orders'
+    SingleProductResponse:
+      $ref: '#/components/schemas/single.product'
+    SingleOrderResponse:
+      $ref: '#/components/schemas/single.order'
     auth.response:
       type: object
       properties:
@@ -716,6 +684,17 @@ components:
             $ref: '#/components/schemas/product'
         meta:
           $ref: '#/components/schemas/meta'
+    single.product:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: Product operation successful
+        data:
+          $ref: '#/components/schemas/product'
     order:
       type: object
       properties:
@@ -788,6 +767,17 @@ components:
             $ref: '#/components/schemas/order'
         meta:
           $ref: '#/components/schemas/meta'
+    single.order:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: Order operation successful
+        data:
+          $ref: '#/components/schemas/order'
     success:
       type: object
       properties:

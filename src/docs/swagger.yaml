@@ -44,3 +44,7 @@ components:
       $ref: './components/paginated.products.yaml'
     PaginatedOrdersResponse:
       $ref: './components/paginated.orders.yaml'
+    SingleProductResponse:
+      $ref: './components/single.product.yaml'
+    SingleOrderResponse:
+      $ref: './components/single.order.yaml'
