@@ -17,14 +17,17 @@ post:
             name:
               type: string
               example: "Jane Doe"
+              default: "Jane Doe"
             email:
               type: string
               format: email
               example: "jane@example.com"
+              default: "jane@example.com"
             password:
               type: string
               format: password
               example: "password123"
+              default: "password123"
   responses:
     '201':
       description: User registered successfully

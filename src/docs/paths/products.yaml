@@ -56,15 +56,19 @@ post:
             sku:
               type: string
               example: "PROD-004"
+              default: "PROD-004"
             name:
               type: string
               example: "Mechanical Keyboard"
+              default: "Mechanical Keyboard"
             price:
               type: number
               example: 89.99
+              default: 89.99
             stockQuantity:
               type: integer
               example: 50
+              default: 50
   responses:
     '201':
       description: Product created successfully

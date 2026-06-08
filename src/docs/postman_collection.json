@@ -9,7 +9,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "dcd53ff0-cbd7-4d35-9842-a34e93d472f2",
+                            "id": "025ca4a3-b388-4207-933d-52b204b0170f",
                             "name": "Register a new user",
                             "request": {
                                 "name": "Register a new user",
@@ -41,7 +41,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"name\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                    "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\"\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -53,7 +53,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "05a17953-4681-49a5-85ba-52af408772d0",
+                                    "id": "25c09333-0852-4e8b-93f6-4770e0328206",
                                     "name": "User registered successfully",
                                     "originalRequest": {
                                         "url": {
@@ -80,7 +80,7 @@
                                         "method": "POST",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"name\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                            "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\"\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -102,7 +102,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "1726e8ea-95a1-4f2e-843f-277d91d902b7",
+                                    "id": "4b826a3a-f3e5-4fd5-85f0-edb3ba9b0c01",
                                     "name": "Bad Request / Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -129,7 +129,7 @@
                                         "method": "POST",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"name\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                            "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\"\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -151,7 +151,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "ca616eb8-b922-4f0c-b3cd-8e53db63a5f8",
+                                    "id": "525a6d9d-84cd-471e-96c1-6affcd7cecfa",
                                     "name": "Conflict - Email already exists",
                                     "originalRequest": {
                                         "url": {
@@ -178,7 +178,7 @@
                                         "method": "POST",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"name\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                            "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\"\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -212,7 +212,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "48dd93de-8eba-4e1b-8a87-9364e8d99584",
+                            "id": "0f50f5e1-56af-4387-814b-d4aa0709887d",
                             "name": "User Login",
                             "request": {
                                 "name": "User Login",
@@ -244,7 +244,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                    "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"admin123\"\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -256,7 +256,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "68d76c0f-e1bc-4fb2-9a72-4732fbb16376",
+                                    "id": "6f03afea-f264-4694-ad6c-f2b1d5f4f329",
                                     "name": "Login successful",
                                     "originalRequest": {
                                         "url": {
@@ -283,7 +283,7 @@
                                         "method": "POST",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                            "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"admin123\"\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -305,7 +305,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "4c7e7364-4245-4d95-a465-23896c517c3b",
+                                    "id": "aba293a3-2289-4691-bea5-3df0b1ac5486",
                                     "name": "Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -332,7 +332,7 @@
                                         "method": "POST",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                            "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"admin123\"\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -354,7 +354,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "4b63b52b-e083-4acb-a4db-e1f2bcd4cd6c",
+                                    "id": "5fc0d5c1-8591-4a1a-bd26-97cb7f0dff2f",
                                     "name": "Invalid email or password",
                                     "originalRequest": {
                                         "url": {
@@ -381,7 +381,7 @@
                                         "method": "POST",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                            "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"admin123\"\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -415,7 +415,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "fd8f915b-35b2-4bc9-8e33-46669fb68498",
+                            "id": "1aedc858-a172-4c25-9da8-adf9346df515",
                             "name": "Refresh Access Token",
                             "request": {
                                 "name": "Refresh Access Token",
@@ -459,7 +459,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "e5f4db72-eca6-4ca3-ba60-c1f98aa2d537",
+                                    "id": "5c840d61-9a92-44fe-a756-37bb21280cee",
                                     "name": "Token refreshed successfully",
                                     "originalRequest": {
                                         "url": {
@@ -508,7 +508,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "68de7e6e-b646-4ce2-bc9d-bbbfd27e3550",
+                                    "id": "e0122189-3cba-4aa5-9f55-983b16caf61a",
                                     "name": "Missing refresh token",
                                     "originalRequest": {
                                         "url": {
@@ -557,7 +557,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "366cff65-5848-43fe-b5e4-bfac122bb0a5",
+                                    "id": "e7d55d65-33eb-4b8b-b0e6-b61661325c10",
                                     "name": "Invalid or expired refresh token",
                                     "originalRequest": {
                                         "url": {
@@ -620,7 +620,7 @@
             "description": "",
             "item": [
                 {
-                    "id": "548f3621-0a5d-43d9-8456-4c066940685b",
+                    "id": "a43a8423-a1f4-4e90-8d6b-0ea305e64f75",
                     "name": "List active products",
                     "request": {
                         "name": "List active products",
@@ -687,7 +687,7 @@
                     },
                     "response": [
                         {
-                            "id": "ae83b0a2-06e1-45a3-8c5b-96878cd86200",
+                            "id": "e512af14-0022-4022-9d75-d5e914b45a88",
                             "name": "Products retrieved successfully",
                             "originalRequest": {
                                 "url": {
@@ -765,7 +765,7 @@
                     }
                 },
                 {
-                    "id": "08191ad2-8189-4940-8853-a15e82e70fda",
+                    "id": "222f3502-973a-4d18-bfe3-5f661da32fdb",
                     "name": "Create a new product",
                     "request": {
                         "name": "Create a new product",
@@ -796,7 +796,7 @@
                         "method": "POST",
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                            "raw": "{\n  \"sku\": \"PROD-004\",\n  \"name\": \"Mechanical Keyboard\",\n  \"price\": 89.99,\n  \"stockQuantity\": 50\n}",
                             "options": {
                                 "raw": {
                                     "headerFamily": "json",
@@ -816,7 +816,7 @@
                     },
                     "response": [
                         {
-                            "id": "f457d977-9579-47bb-806d-fbe7b01b9670",
+                            "id": "ac98453d-6187-48c3-86ce-38142764d66f",
                             "name": "Product created successfully",
                             "originalRequest": {
                                 "url": {
@@ -850,7 +850,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                    "raw": "{\n  \"sku\": \"PROD-004\",\n  \"name\": \"Mechanical Keyboard\",\n  \"price\": 89.99,\n  \"stockQuantity\": 50\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -872,7 +872,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "8e40ecf5-b371-4a66-92a5-dbadb9242ee5",
+                            "id": "378fac7d-e734-41a1-85bc-7daf327bd181",
                             "name": "Validation Failed / Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -906,7 +906,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                    "raw": "{\n  \"sku\": \"PROD-004\",\n  \"name\": \"Mechanical Keyboard\",\n  \"price\": 89.99,\n  \"stockQuantity\": 50\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -928,7 +928,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "dab45e75-7f45-440e-b6e5-1d2192249477",
+                            "id": "94fb6461-2443-43f8-97bc-c11c39979dff",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -962,7 +962,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                    "raw": "{\n  \"sku\": \"PROD-004\",\n  \"name\": \"Mechanical Keyboard\",\n  \"price\": 89.99,\n  \"stockQuantity\": 50\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -984,7 +984,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "29ece6f3-adf4-4d6d-b5a2-687896c606aa",
+                            "id": "989144c3-7d13-4a2a-93d9-88c2cee8d7c9",
                             "name": "Forbidden (Only ADMIN can access)",
                             "originalRequest": {
                                 "url": {
@@ -1018,7 +1018,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                    "raw": "{\n  \"sku\": \"PROD-004\",\n  \"name\": \"Mechanical Keyboard\",\n  \"price\": 89.99,\n  \"stockQuantity\": 50\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -1050,7 +1050,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "90d6df71-9da0-43ef-bfd7-2ea9297b059b",
+                            "id": "0e704e27-441d-4053-847a-718caf77ae12",
                             "name": "List soft-deleted products (Archive)",
                             "request": {
                                 "name": "List soft-deleted products (Archive)",
@@ -1126,7 +1126,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "ec76cdf3-b027-49d7-8e1e-b4b747512348",
+                                    "id": "479b5273-d348-4704-a52e-e4263644f816",
                                     "name": "Archived products retrieved successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1207,7 +1207,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "4355b4ef-7587-4e50-99dc-8c22d6b03f9b",
+                                    "id": "abd15c1d-c1d7-415e-80cb-cafd6cddd701",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -1288,7 +1288,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "58c2da96-3f77-4642-a86f-1b766fd38ecb",
+                                    "id": "21a8e973-ae0b-4ee8-bc3f-c15fd2119b5a",
                                     "name": "Forbidden (Only ADMIN can access)",
                                     "originalRequest": {
                                         "url": {
@@ -1381,7 +1381,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "ec24b4fe-df40-4b26-ac42-45d4c79b1450",
+                            "id": "259a3925-a146-440b-ac44-978d8d107741",
                             "name": "Get product by ID",
                             "request": {
                                 "name": "Get product by ID",
@@ -1423,7 +1423,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "156c8578-1615-4b9a-8a3c-7464a7d2f021",
+                                    "id": "0cf742da-2d2d-437d-bd4c-c8e22faa94f2",
                                     "name": "Product retrieved successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1470,7 +1470,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "82582486-0db7-4ff8-aa55-4ca15bc9aa6c",
+                                    "id": "68a36088-ac57-4922-b2e3-a0adc351f30c",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -1523,7 +1523,7 @@
                             }
                         },
                         {
-                            "id": "226f4e78-dca2-4b7c-9c26-f82f6230c9d0",
+                            "id": "393f61ab-deea-4ef9-9acf-62c5e58c8ecd",
                             "name": "Update product details",
                             "request": {
                                 "name": "Update product details",
@@ -1566,7 +1566,7 @@
                                 "method": "PUT",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                    "raw": "{\n  \"sku\": \"PROD-004-UPDATED\",\n  \"name\": \"Updated Mouse Name\",\n  \"price\": 29.99,\n  \"stockQuantity\": 120\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -1586,7 +1586,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "59f5d311-6fe0-4527-89df-f60d1b46902d",
+                                    "id": "d7058e11-a92c-424c-a6b7-672baaeb24d0",
                                     "name": "Product updated successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1632,7 +1632,7 @@
                                         "method": "PUT",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                            "raw": "{\n  \"sku\": \"PROD-004-UPDATED\",\n  \"name\": \"Updated Mouse Name\",\n  \"price\": 29.99,\n  \"stockQuantity\": 120\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -1654,7 +1654,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "ac492aa0-4aa3-4630-b4dc-779c9d1007e7",
+                                    "id": "335039ba-e14b-41e4-904c-8771fb72d709",
                                     "name": "Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -1700,7 +1700,7 @@
                                         "method": "PUT",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                            "raw": "{\n  \"sku\": \"PROD-004-UPDATED\",\n  \"name\": \"Updated Mouse Name\",\n  \"price\": 29.99,\n  \"stockQuantity\": 120\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -1722,7 +1722,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "a220b431-ff6d-43e4-aff0-7f94cd5c9560",
+                                    "id": "6f7634d5-fc89-494f-8be4-86ad811e7854",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -1768,7 +1768,7 @@
                                         "method": "PUT",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                            "raw": "{\n  \"sku\": \"PROD-004-UPDATED\",\n  \"name\": \"Updated Mouse Name\",\n  \"price\": 29.99,\n  \"stockQuantity\": 120\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -1790,7 +1790,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "a389b0ff-f943-40ef-b350-2013924fdaef",
+                                    "id": "d77ea0ab-37b3-4c80-afea-760dec3fcef8",
                                     "name": "Forbidden",
                                     "originalRequest": {
                                         "url": {
@@ -1836,7 +1836,7 @@
                                         "method": "PUT",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                            "raw": "{\n  \"sku\": \"PROD-004-UPDATED\",\n  \"name\": \"Updated Mouse Name\",\n  \"price\": 29.99,\n  \"stockQuantity\": 120\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -1858,7 +1858,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "991bcc7b-1039-41e6-ba5d-a4198003fcb4",
+                                    "id": "12f24fc8-77a1-489e-a6d6-44fb436e084e",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -1904,7 +1904,7 @@
                                         "method": "PUT",
                                         "body": {
                                             "mode": "raw",
-                                            "raw": "{\n  \"sku\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"stockQuantity\": \"<integer>\"\n}",
+                                            "raw": "{\n  \"sku\": \"PROD-004-UPDATED\",\n  \"name\": \"Updated Mouse Name\",\n  \"price\": 29.99,\n  \"stockQuantity\": 120\n}",
                                             "options": {
                                                 "raw": {
                                                     "headerFamily": "json",
@@ -1932,7 +1932,7 @@
                             }
                         },
                         {
-                            "id": "5cd4dd49-647d-4969-8b8b-0ced696c4be1",
+                            "id": "920ff294-3784-4aa7-98ef-ab1ef5c8e71f",
                             "name": "Soft delete a product",
                             "request": {
                                 "name": "Soft delete a product",
@@ -1982,7 +1982,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "5c850bed-8fe8-4b0f-8fe7-f81643afd91f",
+                                    "id": "0eb09488-f287-4ae4-8e79-034f9219fb7c",
                                     "name": "Product deleted successfully",
                                     "originalRequest": {
                                         "url": {
@@ -2037,7 +2037,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "8b8f0b7d-63b3-4526-a6c7-2f532f02f5a4",
+                                    "id": "1034b475-10a7-4b58-8fb8-09c9571580f6",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -2092,7 +2092,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "77eb4fa6-c7db-47d0-81b8-8dfa3a957cb6",
+                                    "id": "3ff25905-76cb-45dc-a104-7e4329387b25",
                                     "name": "Forbidden",
                                     "originalRequest": {
                                         "url": {
@@ -2147,7 +2147,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "b4d8e8d2-bf8e-429d-86d6-1430c7516f63",
+                                    "id": "196a95f5-c006-4269-9dc8-4657119388e7",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -2216,7 +2216,7 @@
             "description": "",
             "item": [
                 {
-                    "id": "4e50d8af-959b-4f1a-b57f-82763ce8a666",
+                    "id": "73c233a7-692a-40fd-8db4-f58e4db26db4",
                     "name": "List orders",
                     "request": {
                         "name": "List orders",
@@ -2257,7 +2257,7 @@
                                         "type": "text/plain"
                                     },
                                     "key": "status",
-                                    "value": "CANCELLED"
+                                    "value": "PENDING"
                                 },
                                 {
                                     "disabled": false,
@@ -2309,7 +2309,7 @@
                     },
                     "response": [
                         {
-                            "id": "a0ebc55c-f6af-43d2-b3bb-7a67dae781a3",
+                            "id": "7640eef7-3161-4540-81a2-76708486eb1e",
                             "name": "Orders retrieved successfully",
                             "originalRequest": {
                                 "url": {
@@ -2345,7 +2345,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CANCELLED"
+                                            "value": "PENDING"
                                         },
                                         {
                                             "disabled": false,
@@ -2402,12 +2402,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"CANCELLED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"PENDING\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"total\": \"<integer>\",\n    \"page\": \"<integer>\",\n    \"limit\": \"<integer>\",\n    \"totalPages\": \"<integer>\"\n  }\n}",
+                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"PENDING\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"CANCELLED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"total\": \"<integer>\",\n    \"page\": \"<integer>\",\n    \"limit\": \"<integer>\",\n    \"totalPages\": \"<integer>\"\n  }\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "0a2daadd-3229-4a65-9136-d910f9ad0ecf",
+                            "id": "f0f9cbd6-0d0e-47d1-98ac-03b1978cf109",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2443,7 +2443,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CANCELLED"
+                                            "value": "PENDING"
                                         },
                                         {
                                             "disabled": false,
@@ -2511,7 +2511,7 @@
                     }
                 },
                 {
-                    "id": "8c7f0baa-2118-4c09-ba3a-b56d0933032e",
+                    "id": "68bb6606-4386-43c1-8a53-0ae5b505cff4",
                     "name": "Create a new order",
                     "request": {
                         "name": "Create a new order",
@@ -2542,7 +2542,7 @@
                         "method": "POST",
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"<uuid>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+                            "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0\",\n      \"quantity\": 2\n    }\n  ]\n}",
                             "options": {
                                 "raw": {
                                     "headerFamily": "json",
@@ -2562,7 +2562,7 @@
                     },
                     "response": [
                         {
-                            "id": "97bd5ae7-8980-4d04-b33b-aa6f3ac1318d",
+                            "id": "e96c8da1-3157-417d-936e-d565b3ce6e1e",
                             "name": "Order created successfully",
                             "originalRequest": {
                                 "url": {
@@ -2596,7 +2596,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"<uuid>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0\",\n      \"quantity\": 2\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -2613,12 +2613,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"id\": \"<uuid>\",\n    \"userId\": \"<uuid>\",\n    \"status\": \"PENDING\",\n    \"totalAmount\": \"<number>\",\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\",\n    \"items\": [\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      }\n    ]\n  }\n}",
+                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"id\": \"<uuid>\",\n    \"userId\": \"<uuid>\",\n    \"status\": \"COMPLETED\",\n    \"totalAmount\": \"<number>\",\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\",\n    \"items\": [\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      }\n    ]\n  }\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "ee833aa0-e86f-4760-a576-5795b82596b2",
+                            "id": "21892660-2c03-4012-bafa-6be589fdd68c",
                             "name": "Bad Request (Invalid parameters / insufficient stock)",
                             "originalRequest": {
                                 "url": {
@@ -2652,7 +2652,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"<uuid>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0\",\n      \"quantity\": 2\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -2674,7 +2674,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "5a8754aa-cb88-4eeb-8002-a6c71d0a7da6",
+                            "id": "859e9cfc-28dd-4e99-adac-f6b501f39da3",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2708,7 +2708,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"<uuid>\",\n      \"quantity\": \"<integer>\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"items\": [\n    {\n      \"productId\": \"d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0\",\n      \"quantity\": 2\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "headerFamily": "json",
@@ -2746,7 +2746,7 @@
         }
     ],
     "info": {
-        "_postman_id": "23887f16-f771-4350-b83c-e2b76f46053d",
+        "_postman_id": "6b29b89a-9036-490c-8f25-c0acef8c6f87",
         "name": "Order & Inventory Management System API",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {

@@ -2,7 +2,10 @@ import express from "express";
 import { createOrder, getOrders } from "../controllers/order.controller.js";
 import { validate } from "../middlewares/validation.js";
 import { authenticateJWT, authorizeRoles } from "../middlewares/auth.js";
-import { createOrderSchema, getOrdersQuerySchema } from "../validators/order.validator.js";
+import {
+  createOrderSchema,
+  getOrdersQuerySchema,
+} from "../validators/order.validator.js";
 import { orderRateLimiter } from "../middlewares/rateLimiter.js";
 import { idempotency } from "../middlewares/idempotency.js";
 
@@ -15,9 +18,9 @@ router.post(
   "/",
   orderRateLimiter,
   idempotency,
-  authorizeRoles("ADMIN", "CUSTOMER"),
+  authorizeRoles("CUSTOMER"),
   validate(createOrderSchema),
-  createOrder
+  createOrder,
 );
 router.get("/", validate(getOrdersQuerySchema), getOrders);
 

@@ -50,15 +50,19 @@ put:
             sku:
               type: string
               example: "PROD-004-UPDATED"
+              default: "PROD-004-UPDATED"
             name:
               type: string
               example: "Updated Mouse Name"
+              default: "Updated Mouse Name"
             price:
               type: number
               example: 29.99
+              default: 29.99
             stockQuantity:
               type: integer
               example: 120
+              default: 120
   responses:
     '200':
       description: Product updated successfully

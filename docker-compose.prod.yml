@@ -8,3 +8,12 @@ services:
       - NODE_ENV=production
       - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
       - REDIS_URL=redis://redis:6379
+
+  worker:
+    build:
+      target: production
+    command: ["sh", "./scripts/start-worker.sh"]
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
+      - REDIS_URL=redis://redis:6379

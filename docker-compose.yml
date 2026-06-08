@@ -1,14 +1,38 @@
 services:
-#   app:
-#     container_name: order-inventory-app
-#     build:
-#       context: .
-#     restart: always
-#     depends_on:
-#       postgres:
-#         condition: service_healthy
-#       redis:
-#         condition: service_started
+  app:
+    container_name: order-inventory-app
+    build:
+      context: .
+      target: production
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
+      - REDIS_URL=redis://redis:6379
+
+  worker:
+    container_name: order-inventory-worker
+    build:
+      context: .
+      target: production
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    command: ["sh", "./scripts/start-worker.sh"]
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
+      - REDIS_URL=redis://redis:6379
 
   postgres:
     image: postgres:18

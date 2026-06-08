@@ -17,10 +17,12 @@ post:
               type: string
               format: email
               example: "admin@example.com"
+              default: "admin@example.com"
             password:
               type: string
               format: password
               example: "admin123"
+              default: "admin123"
   responses:
     '200':
       description: Login successful

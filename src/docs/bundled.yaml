@@ -27,14 +27,17 @@ paths:
                 name:
                   type: string
                   example: Jane Doe
+                  default: Jane Doe
                 email:
                   type: string
                   format: email
                   example: jane@example.com
+                  default: jane@example.com
                 password:
                   type: string
                   format: password
                   example: password123
+                  default: password123
       responses:
         '201':
           description: User registered successfully
@@ -74,10 +77,12 @@ paths:
                   type: string
                   format: email
                   example: admin@example.com
+                  default: admin@example.com
                 password:
                   type: string
                   format: password
                   example: admin123
+                  default: admin123
       responses:
         '200':
           description: Login successful
@@ -205,15 +210,19 @@ paths:
                 sku:
                   type: string
                   example: PROD-004
+                  default: PROD-004
                 name:
                   type: string
                   example: Mechanical Keyboard
+                  default: Mechanical Keyboard
                 price:
                   type: number
                   example: 89.99
+                  default: 89.99
                 stockQuantity:
                   type: integer
                   example: 50
+                  default: 50
       responses:
         '201':
           description: Product created successfully
@@ -341,15 +350,19 @@ paths:
                 sku:
                   type: string
                   example: PROD-004-UPDATED
+                  default: PROD-004-UPDATED
                 name:
                   type: string
                   example: Updated Mouse Name
+                  default: Updated Mouse Name
                 price:
                   type: number
                   example: 29.99
+                  default: 29.99
                 stockQuantity:
                   type: integer
                   example: 120
+                  default: 120
       responses:
         '200':
           description: Product updated successfully
@@ -515,10 +528,12 @@ paths:
                         type: string
                         format: uuid
                         example: d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0
+                        default: d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0
                       quantity:
                         type: integer
                         minimum: 1
                         example: 2
+                        default: 2
       responses:
         '201':
           description: Order created successfully

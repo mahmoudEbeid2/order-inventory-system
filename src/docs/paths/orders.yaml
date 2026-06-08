@@ -82,10 +82,12 @@ post:
                     type: string
                     format: uuid
                     example: "d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0"
+                    default: "d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0"
                   quantity:
                     type: integer
                     minimum: 1
                     example: 2
+                    default: 2
   responses:
     '201':
       description: Order created successfully

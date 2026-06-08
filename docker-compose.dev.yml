@@ -1,16 +1,28 @@
 services:
-#   app:
-#     build:
-#       target: development
-#     ports:
-#       - "3000:3000"
-#     volumes:
-#       - ./src:/app/src
-#       - .env:/app/.env
-#     environment:
-#       - NODE_ENV=development
-#       - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
-#       - REDIS_URL=redis://redis:6379
+  app:
+    build:
+      target: development
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - .env:/app/.env
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
+      - REDIS_URL=redis://redis:6379
+
+  worker:
+    build:
+      target: development
+    volumes:
+      - ./src:/app/src
+      - .env:/app/.env
+    command: ["sh", "./scripts/start-worker.sh"]
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
+      - REDIS_URL=redis://redis:6379
 
   postgres:
     ports:

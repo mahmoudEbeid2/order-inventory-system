@@ -7,6 +7,8 @@
     "build": "tsc",
     "start": "node dist/src/server.js",
     "dev": "nodemon -L --watch src --ext ts,js --exec npx tsx src/server.ts",
+    "start:worker": "node dist/src/worker.js",
+    "dev:worker": "nodemon -L --watch src --ext ts,js --exec npx tsx src/worker.ts",
     "docs:export": "redocly bundle src/docs/swagger.yaml -o src/docs/bundled.yaml && openapi2postmanv2 -s src/docs/bundled.yaml -o src/docs/postman_collection.json -p -c postman_config.json",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
