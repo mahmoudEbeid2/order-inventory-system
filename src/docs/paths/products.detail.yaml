@@ -111,19 +111,8 @@ delete:
         type: string
         format: uuid
   responses:
-    '200':
-      description: Product deleted successfully
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: true
-              message:
-                type: string
-                example: Product deleted successfully
+    '204':
+      description: Product deleted successfully (No Content)
     '401':
       description: Unauthorized
       content:

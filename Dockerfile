@@ -12,8 +12,9 @@ FROM base AS development
 RUN npm ci --loglevel=error
 COPY . .
 
-# Fix Windows line endings and set execution permissions for start script
+# Fix Windows line endings and set execution permissions for start scripts
 RUN sed -i 's/\r$//' ./scripts/start.sh && chmod +x ./scripts/start.sh
+RUN sed -i 's/\r$//' ./scripts/start-worker.sh && chmod +x ./scripts/start-worker.sh
 
 EXPOSE 3000
 CMD ["sh", "./scripts/start.sh"]
@@ -38,9 +39,11 @@ RUN npm install --omit=dev --loglevel=error
 # Copy prisma files for migration and generation
 COPY prisma ./prisma
 COPY scripts/start.sh ./scripts/start.sh
+COPY scripts/start-worker.sh ./scripts/start-worker.sh
 
-# Fix Windows line endings and set execution permissions for start script
+# Fix Windows line endings and set execution permissions for start scripts
 RUN sed -i 's/\r$//' ./scripts/start.sh && chmod +x ./scripts/start.sh
+RUN sed -i 's/\r$//' ./scripts/start-worker.sh && chmod +x ./scripts/start-worker.sh
 
 
 # Copy compiled JavaScript from Builder stage

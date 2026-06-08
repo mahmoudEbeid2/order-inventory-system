@@ -60,6 +60,16 @@ post:
   description: Check inventory stock, deduct stock atomically within a database transaction, and create a new order. Concurrency is handled to prevent race conditions. Queues a background job to send an invoice email with a PDF attachment.
   security:
     - BearerAuth: []
+  parameters:
+    - name: X-Idempotency-Key
+      in: header
+      required: true
+      description: Unique key to ensure idempotent request (use a UUID)
+      schema:
+        type: string
+        format: uuid
+        example: "550e8400-e29b-41d4-a716-446655440001"
+        default: "550e8400-e29b-41d4-a716-446655440001"
   requestBody:
     required: true
     content:

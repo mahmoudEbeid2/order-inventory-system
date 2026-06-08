@@ -35,11 +35,12 @@ model User {
 /// Represents a catalog product. Utilizes isDeleted flag for safe soft-delete.
 model Product {
   id            String      @id @default(uuid())
+  // using partial unique index ./migrations/20260608072700_add_partial_index  to allow soft-deleted 
   sku           String     
   name          String
   price         Decimal    
   stockQuantity Int         @map("stock_quantity")
-  /// soft delete flag to prevent database delete cascade issues
+  /// soft delete fl ag to prevent database delete cascade issues
   isDeleted     Boolean     @default(false) @map("is_deleted")
   orderItems    OrderItem[] 
   createdAt     DateTime    @default(now()) @map("created_at")

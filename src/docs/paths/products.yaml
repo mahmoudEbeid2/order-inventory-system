@@ -41,6 +41,16 @@ post:
   description: Add a new product to the catalog. Restricted to ADMIN.
   security:
     - BearerAuth: []
+  parameters:
+    - name: X-Idempotency-Key
+      in: header
+      required: true
+      description: Unique key to ensure idempotent request (use a UUID)
+      schema:
+        type: string
+        format: uuid
+        example: "550e8400-e29b-41d4-a716-446655440000"
+        default: "550e8400-e29b-41d4-a716-446655440000"
   requestBody:
     required: true
     content:

@@ -9,7 +9,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "025ca4a3-b388-4207-933d-52b204b0170f",
+                            "id": "449bbba0-04aa-413b-8829-3af967654eb3",
                             "name": "Register a new user",
                             "request": {
                                 "name": "Register a new user",
@@ -53,7 +53,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "25c09333-0852-4e8b-93f6-4770e0328206",
+                                    "id": "8369e835-4239-4ca3-93ec-1b0e1883e5d2",
                                     "name": "User registered successfully",
                                     "originalRequest": {
                                         "url": {
@@ -97,12 +97,12 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"user\": {\n      \"id\": \"<uuid>\",\n      \"name\": \"<string>\",\n      \"email\": \"<string>\",\n      \"role\": \"CUSTOMER\"\n    },\n    \"accessToken\": \"<string>\",\n    \"refreshToken\": \"<string>\"\n  }\n}",
+                                    "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"user\": {\n      \"id\": \"<uuid>\",\n      \"name\": \"<string>\",\n      \"email\": \"<string>\",\n      \"role\": \"ADMIN\"\n    },\n    \"accessToken\": \"<string>\",\n    \"refreshToken\": \"<string>\"\n  }\n}",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "4b826a3a-f3e5-4fd5-85f0-edb3ba9b0c01",
+                                    "id": "8b33bdb6-00e0-468e-ba32-5648a42e47b4",
                                     "name": "Bad Request / Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -151,7 +151,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "525a6d9d-84cd-471e-96c1-6affcd7cecfa",
+                                    "id": "30738d2e-ddf2-4b21-b942-9d047e2142ff",
                                     "name": "Conflict - Email already exists",
                                     "originalRequest": {
                                         "url": {
@@ -212,7 +212,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "0f50f5e1-56af-4387-814b-d4aa0709887d",
+                            "id": "e8e36d97-69f8-44b9-87ac-748777d56182",
                             "name": "User Login",
                             "request": {
                                 "name": "User Login",
@@ -256,7 +256,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "6f03afea-f264-4694-ad6c-f2b1d5f4f329",
+                                    "id": "fe9ebfe6-a710-425a-bb4a-dc5bc76e6bd7",
                                     "name": "Login successful",
                                     "originalRequest": {
                                         "url": {
@@ -300,12 +300,12 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"user\": {\n      \"id\": \"<uuid>\",\n      \"name\": \"<string>\",\n      \"email\": \"<string>\",\n      \"role\": \"CUSTOMER\"\n    },\n    \"accessToken\": \"<string>\",\n    \"refreshToken\": \"<string>\"\n  }\n}",
+                                    "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"user\": {\n      \"id\": \"<uuid>\",\n      \"name\": \"<string>\",\n      \"email\": \"<string>\",\n      \"role\": \"ADMIN\"\n    },\n    \"accessToken\": \"<string>\",\n    \"refreshToken\": \"<string>\"\n  }\n}",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "aba293a3-2289-4691-bea5-3df0b1ac5486",
+                                    "id": "82882354-9d01-4e75-aff3-c81ff763bd65",
                                     "name": "Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -354,7 +354,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "5fc0d5c1-8591-4a1a-bd26-97cb7f0dff2f",
+                                    "id": "403137b5-2ddf-4945-a3cd-cfa56db30b8d",
                                     "name": "Invalid email or password",
                                     "originalRequest": {
                                         "url": {
@@ -415,7 +415,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "1aedc858-a172-4c25-9da8-adf9346df515",
+                            "id": "b18d6e98-7e55-419a-b6cb-b8d4545f53fd",
                             "name": "Refresh Access Token",
                             "request": {
                                 "name": "Refresh Access Token",
@@ -459,7 +459,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "5c840d61-9a92-44fe-a756-37bb21280cee",
+                                    "id": "a53cd2cd-4267-4f90-883f-219c781daf53",
                                     "name": "Token refreshed successfully",
                                     "originalRequest": {
                                         "url": {
@@ -508,7 +508,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "e0122189-3cba-4aa5-9f55-983b16caf61a",
+                                    "id": "74281538-9170-4106-a722-b91b0e7045b7",
                                     "name": "Missing refresh token",
                                     "originalRequest": {
                                         "url": {
@@ -557,7 +557,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "e7d55d65-33eb-4b8b-b0e6-b61661325c10",
+                                    "id": "bd607e0e-055a-474d-b028-462aee4dfad1",
                                     "name": "Invalid or expired refresh token",
                                     "originalRequest": {
                                         "url": {
@@ -620,7 +620,7 @@
             "description": "",
             "item": [
                 {
-                    "id": "a43a8423-a1f4-4e90-8d6b-0ea305e64f75",
+                    "id": "a001ea69-043a-487f-93d9-22458494c5ae",
                     "name": "List active products",
                     "request": {
                         "name": "List active products",
@@ -687,7 +687,7 @@
                     },
                     "response": [
                         {
-                            "id": "e512af14-0022-4022-9d75-d5e914b45a88",
+                            "id": "109ff7d5-a639-40cb-b0f8-2fc94be8a39e",
                             "name": "Products retrieved successfully",
                             "originalRequest": {
                                 "url": {
@@ -765,7 +765,7 @@
                     }
                 },
                 {
-                    "id": "222f3502-973a-4d18-bfe3-5f661da32fdb",
+                    "id": "d1012167-67e9-49b0-b1b7-f558421dd8c9",
                     "name": "Create a new product",
                     "request": {
                         "name": "Create a new product",
@@ -784,6 +784,15 @@
                             "variable": []
                         },
                         "header": [
+                            {
+                                "disabled": false,
+                                "description": {
+                                    "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                    "type": "text/plain"
+                                },
+                                "key": "X-Idempotency-Key",
+                                "value": "550e8400-e29b-41d4-a716-446655440000"
+                            },
                             {
                                 "key": "Content-Type",
                                 "value": "application/json"
@@ -816,7 +825,7 @@
                     },
                     "response": [
                         {
-                            "id": "ac98453d-6187-48c3-86ce-38142764d66f",
+                            "id": "adf015cc-4652-4396-bb2b-71b4785c33ab",
                             "name": "Product created successfully",
                             "originalRequest": {
                                 "url": {
@@ -830,6 +839,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440000"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -872,7 +890,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "378fac7d-e734-41a1-85bc-7daf327bd181",
+                            "id": "2975e2f7-9054-4ca0-b7e9-7180f7a28d33",
                             "name": "Validation Failed / Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -886,6 +904,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440000"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -928,7 +955,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "94fb6461-2443-43f8-97bc-c11c39979dff",
+                            "id": "de8cae49-1090-4537-ab21-59536aef722f",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -942,6 +969,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440000"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -984,7 +1020,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "989144c3-7d13-4a2a-93d9-88c2cee8d7c9",
+                            "id": "801a98fe-e3fd-4df7-92f2-9cdd3b7a8524",
                             "name": "Forbidden (Only ADMIN can access)",
                             "originalRequest": {
                                 "url": {
@@ -998,6 +1034,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440000"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -1050,7 +1095,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "0e704e27-441d-4053-847a-718caf77ae12",
+                            "id": "64089147-d99e-4424-aa3d-7d9c6c917a81",
                             "name": "List soft-deleted products (Archive)",
                             "request": {
                                 "name": "List soft-deleted products (Archive)",
@@ -1126,7 +1171,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "479b5273-d348-4704-a52e-e4263644f816",
+                                    "id": "70dce489-d30c-42e0-9672-700da03da555",
                                     "name": "Archived products retrieved successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1207,7 +1252,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "abd15c1d-c1d7-415e-80cb-cafd6cddd701",
+                                    "id": "0bf5d0f1-e815-44b6-98af-36ef539a2959",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -1288,7 +1333,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "21a8e973-ae0b-4ee8-bc3f-c15fd2119b5a",
+                                    "id": "c458f316-09a3-43b2-8a9c-dd736392a428",
                                     "name": "Forbidden (Only ADMIN can access)",
                                     "originalRequest": {
                                         "url": {
@@ -1381,7 +1426,7 @@
                     "description": "",
                     "item": [
                         {
-                            "id": "259a3925-a146-440b-ac44-978d8d107741",
+                            "id": "7f3bd722-295d-4824-9011-55fd3f83ecc5",
                             "name": "Get product by ID",
                             "request": {
                                 "name": "Get product by ID",
@@ -1423,7 +1468,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "0cf742da-2d2d-437d-bd4c-c8e22faa94f2",
+                                    "id": "f57d3cf4-a861-40c6-98d3-f79d608fb218",
                                     "name": "Product retrieved successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1470,7 +1515,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "68a36088-ac57-4922-b2e3-a0adc351f30c",
+                                    "id": "b74acb73-5d08-413a-b477-2002cdceef22",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -1523,7 +1568,7 @@
                             }
                         },
                         {
-                            "id": "393f61ab-deea-4ef9-9acf-62c5e58c8ecd",
+                            "id": "4009dcda-1bcd-41af-b058-0b757eae8440",
                             "name": "Update product details",
                             "request": {
                                 "name": "Update product details",
@@ -1586,7 +1631,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "d7058e11-a92c-424c-a6b7-672baaeb24d0",
+                                    "id": "bcf62f70-1217-48ac-9e11-b0a9b480a5b8",
                                     "name": "Product updated successfully",
                                     "originalRequest": {
                                         "url": {
@@ -1654,7 +1699,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "335039ba-e14b-41e4-904c-8771fb72d709",
+                                    "id": "54e24ed8-5831-4439-b1ff-f6133a0dd10e",
                                     "name": "Validation Failed",
                                     "originalRequest": {
                                         "url": {
@@ -1722,7 +1767,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "6f7634d5-fc89-494f-8be4-86ad811e7854",
+                                    "id": "89fa7502-0b3d-447e-a58a-00decaee063e",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -1790,7 +1835,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "d77ea0ab-37b3-4c80-afea-760dec3fcef8",
+                                    "id": "49c864fc-f35e-4970-934d-2f2bd4a308f5",
                                     "name": "Forbidden",
                                     "originalRequest": {
                                         "url": {
@@ -1858,7 +1903,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "12f24fc8-77a1-489e-a6d6-44fb436e084e",
+                                    "id": "b20d0f06-004f-4d74-82d9-c11c8145f691",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -1932,7 +1977,7 @@
                             }
                         },
                         {
-                            "id": "920ff294-3784-4aa7-98ef-ab1ef5c8e71f",
+                            "id": "a0d8e427-6949-436e-aea1-bd2da4cb77cb",
                             "name": "Soft delete a product",
                             "request": {
                                 "name": "Soft delete a product",
@@ -1982,8 +2027,8 @@
                             },
                             "response": [
                                 {
-                                    "id": "0eb09488-f287-4ae4-8e79-034f9219fb7c",
-                                    "name": "Product deleted successfully",
+                                    "id": "27a55895-663e-499d-ae66-5244d427cd45",
+                                    "name": "Product deleted successfully (No Content)",
                                     "originalRequest": {
                                         "url": {
                                             "path": [
@@ -2009,10 +2054,6 @@
                                         },
                                         "header": [
                                             {
-                                                "key": "Accept",
-                                                "value": "application/json"
-                                            },
-                                            {
                                                 "description": {
                                                     "content": "Added as a part of security scheme: bearer",
                                                     "type": "text/plain"
@@ -2024,20 +2065,14 @@
                                         "method": "DELETE",
                                         "body": {}
                                     },
-                                    "status": "OK",
-                                    "code": 200,
-                                    "header": [
-                                        {
-                                            "key": "Content-Type",
-                                            "value": "application/json"
-                                        }
-                                    ],
-                                    "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\"\n}",
+                                    "status": "No Content",
+                                    "code": 204,
+                                    "header": [],
                                     "cookie": [],
-                                    "_postman_previewlanguage": "json"
+                                    "_postman_previewlanguage": "text"
                                 },
                                 {
-                                    "id": "1034b475-10a7-4b58-8fb8-09c9571580f6",
+                                    "id": "73374c22-6102-406e-9b39-1a84e4794936",
                                     "name": "Unauthorized",
                                     "originalRequest": {
                                         "url": {
@@ -2092,7 +2127,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "3ff25905-76cb-45dc-a104-7e4329387b25",
+                                    "id": "4ac17e7f-c0c0-40ce-abf6-e0463f557742",
                                     "name": "Forbidden",
                                     "originalRequest": {
                                         "url": {
@@ -2147,7 +2182,7 @@
                                     "_postman_previewlanguage": "json"
                                 },
                                 {
-                                    "id": "196a95f5-c006-4269-9dc8-4657119388e7",
+                                    "id": "b16b2806-ec86-420d-b051-a30970371181",
                                     "name": "Product not found",
                                     "originalRequest": {
                                         "url": {
@@ -2216,7 +2251,7 @@
             "description": "",
             "item": [
                 {
-                    "id": "73c233a7-692a-40fd-8db4-f58e4db26db4",
+                    "id": "e0067dd7-aafa-4ab8-ae8c-f54d44113619",
                     "name": "List orders",
                     "request": {
                         "name": "List orders",
@@ -2257,7 +2292,7 @@
                                         "type": "text/plain"
                                     },
                                     "key": "status",
-                                    "value": "PENDING"
+                                    "value": "COMPLETED"
                                 },
                                 {
                                     "disabled": false,
@@ -2309,7 +2344,7 @@
                     },
                     "response": [
                         {
-                            "id": "7640eef7-3161-4540-81a2-76708486eb1e",
+                            "id": "2bdd57da-97c5-4ee1-8820-53b21e19c200",
                             "name": "Orders retrieved successfully",
                             "originalRequest": {
                                 "url": {
@@ -2345,7 +2380,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "PENDING"
+                                            "value": "COMPLETED"
                                         },
                                         {
                                             "disabled": false,
@@ -2402,12 +2437,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"PENDING\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"CANCELLED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"total\": \"<integer>\",\n    \"page\": \"<integer>\",\n    \"limit\": \"<integer>\",\n    \"totalPages\": \"<integer>\"\n  }\n}",
+                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"COMPLETED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"userId\": \"<uuid>\",\n      \"status\": \"CANCELLED\",\n      \"totalAmount\": \"<number>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\",\n      \"items\": [\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        },\n        {\n          \"id\": \"<uuid>\",\n          \"productId\": \"<uuid>\",\n          \"quantity\": \"<integer>\",\n          \"priceAtPurchase\": \"<number>\",\n          \"product\": {\n            \"name\": \"<string>\",\n            \"sku\": \"<string>\"\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"total\": \"<integer>\",\n    \"page\": \"<integer>\",\n    \"limit\": \"<integer>\",\n    \"totalPages\": \"<integer>\"\n  }\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "f0f9cbd6-0d0e-47d1-98ac-03b1978cf109",
+                            "id": "86f02639-8b13-4296-89a5-dcf4d131723e",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2443,7 +2478,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "PENDING"
+                                            "value": "COMPLETED"
                                         },
                                         {
                                             "disabled": false,
@@ -2511,7 +2546,7 @@
                     }
                 },
                 {
-                    "id": "68bb6606-4386-43c1-8a53-0ae5b505cff4",
+                    "id": "50590473-963b-45d2-a49a-fe1ea21abf9b",
                     "name": "Create a new order",
                     "request": {
                         "name": "Create a new order",
@@ -2530,6 +2565,15 @@
                             "variable": []
                         },
                         "header": [
+                            {
+                                "disabled": false,
+                                "description": {
+                                    "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                    "type": "text/plain"
+                                },
+                                "key": "X-Idempotency-Key",
+                                "value": "550e8400-e29b-41d4-a716-446655440001"
+                            },
                             {
                                 "key": "Content-Type",
                                 "value": "application/json"
@@ -2562,7 +2606,7 @@
                     },
                     "response": [
                         {
-                            "id": "e96c8da1-3157-417d-936e-d565b3ce6e1e",
+                            "id": "0055879b-2c11-4ad2-95a5-ce6b860f85bf",
                             "name": "Order created successfully",
                             "originalRequest": {
                                 "url": {
@@ -2576,6 +2620,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440001"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -2613,12 +2666,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"id\": \"<uuid>\",\n    \"userId\": \"<uuid>\",\n    \"status\": \"COMPLETED\",\n    \"totalAmount\": \"<number>\",\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\",\n    \"items\": [\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      }\n    ]\n  }\n}",
+                            "body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"id\": \"<uuid>\",\n    \"userId\": \"<uuid>\",\n    \"status\": \"CANCELLED\",\n    \"totalAmount\": \"<number>\",\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\",\n    \"items\": [\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<uuid>\",\n        \"productId\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"priceAtPurchase\": \"<number>\",\n        \"product\": {\n          \"name\": \"<string>\",\n          \"sku\": \"<string>\"\n        }\n      }\n    ]\n  }\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "21892660-2c03-4012-bafa-6be589fdd68c",
+                            "id": "afc4870f-31c8-40bc-ae38-2b930a35d172",
                             "name": "Bad Request (Invalid parameters / insufficient stock)",
                             "originalRequest": {
                                 "url": {
@@ -2632,6 +2685,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440001"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -2674,7 +2736,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "859e9cfc-28dd-4e99-adac-f6b501f39da3",
+                            "id": "4b794944-43c5-4410-9f23-54a429ae786a",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2688,6 +2750,15 @@
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": {
+                                            "content": "(Required) Unique key to ensure idempotent request (use a UUID)",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "X-Idempotency-Key",
+                                        "value": "550e8400-e29b-41d4-a716-446655440001"
+                                    },
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json"
@@ -2746,7 +2817,7 @@
         }
     ],
     "info": {
-        "_postman_id": "6b29b89a-9036-490c-8f25-c0acef8c6f87",
+        "_postman_id": "8396bb08-4318-4c14-a3f3-8c8ba195e3ea",
         "name": "Order & Inventory Management System API",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {

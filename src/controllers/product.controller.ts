@@ -23,10 +23,7 @@ export const updateProduct = catchAsync(async (req, res) => {
 export const deleteProduct = catchAsync(async (req, res) => {
   const id = req.params.id as string;
   await productService.deleteProduct(id);
-  res.status(200).json({
-    success: true,
-    message: "Product deleted successfully",
-  });
+  res.status(204).send();
 });
 
 export const getProducts = catchAsync(async (req, res) => {

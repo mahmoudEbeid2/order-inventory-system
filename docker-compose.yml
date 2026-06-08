@@ -12,10 +12,10 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
-    environment:
-      - NODE_ENV=production
-      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
-      - REDIS_URL=redis://redis:6379
+    env_file:
+      - .env
+    volumes:
+      - uploads_data:/app/uploads
 
   worker:
     container_name: order-inventory-worker
@@ -29,19 +29,17 @@ services:
       redis:
         condition: service_started
     command: ["sh", "./scripts/start-worker.sh"]
-    environment:
-      - NODE_ENV=production
-      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-order_inventory_db}?schema=public
-      - REDIS_URL=redis://redis:6379
+    env_file:
+      - .env
+    volumes:
+      - uploads_data:/app/uploads
 
   postgres:
     image: postgres:18
     container_name: order-inventory-db
     restart: always
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-      POSTGRES_DB: ${POSTGRES_DB:-order_inventory_db}
+    env_file:
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql
     healthcheck:
@@ -61,3 +59,4 @@ services:
 
 volumes:
   postgres_data:
+  uploads_data:

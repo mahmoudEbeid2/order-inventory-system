@@ -195,6 +195,16 @@ paths:
       description: Add a new product to the catalog. Restricted to ADMIN.
       security:
         - BearerAuth: []
+      parameters:
+        - name: X-Idempotency-Key
+          in: header
+          required: true
+          description: Unique key to ensure idempotent request (use a UUID)
+          schema:
+            type: string
+            format: uuid
+            example: 550e8400-e29b-41d4-a716-446655440000
+            default: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -410,19 +420,8 @@ paths:
             type: string
             format: uuid
       responses:
-        '200':
-          description: Product deleted successfully
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Product deleted successfully
+        '204':
+          description: Product deleted successfully (No Content)
         '401':
           description: Unauthorized
           content:
@@ -506,6 +505,16 @@ paths:
       description: Check inventory stock, deduct stock atomically within a database transaction, and create a new order. Concurrency is handled to prevent race conditions. Queues a background job to send an invoice email with a PDF attachment.
       security:
         - BearerAuth: []
+      parameters:
+        - name: X-Idempotency-Key
+          in: header
+          required: true
+          description: Unique key to ensure idempotent request (use a UUID)
+          schema:
+            type: string
+            format: uuid
+            example: 550e8400-e29b-41d4-a716-446655440001
+            default: 550e8400-e29b-41d4-a716-446655440001
       requestBody:
         required: true
         content:
