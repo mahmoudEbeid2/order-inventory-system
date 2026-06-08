@@ -40,3 +40,7 @@ components:
       $ref: './components/auth.response.yaml'
     OrderResponse:
       $ref: './components/order.yaml'
+    PaginatedProductsResponse:
+      $ref: './components/paginated.products.yaml'
+    PaginatedOrdersResponse:
+      $ref: './components/paginated.orders.yaml'

@@ -182,33 +182,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Products retrieved successfully
-                  data:
-                    type: array
-                    items:
-                      $ref: '#/components/schemas/product'
-                  meta:
-                    type: object
-                    properties:
-                      total:
-                        type: integer
-                        example: 5
-                      page:
-                        type: integer
-                        example: 1
-                      limit:
-                        type: integer
-                        example: 10
-                      totalPages:
-                        type: integer
-                        example: 1
+                $ref: '#/components/schemas/paginated.products'
     post:
       tags:
         - Products
@@ -311,33 +285,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Archived products retrieved successfully
-                  data:
-                    type: array
-                    items:
-                      $ref: '#/components/schemas/product'
-                  meta:
-                    type: object
-                    properties:
-                      total:
-                        type: integer
-                        example: 2
-                      page:
-                        type: integer
-                        example: 1
-                      limit:
-                        type: integer
-                        example: 10
-                      totalPages:
-                        type: integer
-                        example: 1
+                $ref: '#/components/schemas/paginated.products'
         '401':
           description: Unauthorized
           content:
@@ -558,33 +506,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
-                  message:
-                    type: string
-                    example: Orders retrieved successfully
-                  data:
-                    type: array
-                    items:
-                      $ref: '#/components/schemas/order'
-                  meta:
-                    type: object
-                    properties:
-                      total:
-                        type: integer
-                        example: 12
-                      page:
-                        type: integer
-                        example: 1
-                      limit:
-                        type: integer
-                        example: 10
-                      totalPages:
-                        type: integer
-                        example: 2
+                $ref: '#/components/schemas/paginated.orders'
         '401':
           description: Unauthorized
           content:
@@ -667,6 +589,10 @@ components:
       $ref: '#/components/schemas/auth.response'
     OrderResponse:
       $ref: '#/components/schemas/order'
+    PaginatedProductsResponse:
+      $ref: '#/components/schemas/paginated.products'
+    PaginatedOrdersResponse:
+      $ref: '#/components/schemas/paginated.orders'
     auth.response:
       type: object
       properties:
@@ -760,6 +686,36 @@ components:
           type: string
           format: date-time
           example: '2026-06-08T12:05:00.000Z'
+    meta:
+      type: object
+      properties:
+        total:
+          type: integer
+          example: 10
+        page:
+          type: integer
+          example: 1
+        limit:
+          type: integer
+          example: 10
+        totalPages:
+          type: integer
+          example: 1
+    paginated.products:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: Products retrieved successfully
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/product'
+        meta:
+          $ref: '#/components/schemas/meta'
     order:
       type: object
       properties:
@@ -817,6 +773,21 @@ components:
                   sku:
                     type: string
                     example: KEYB-MECH-01
+    paginated.orders:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: Orders retrieved successfully
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/order'
+        meta:
+          $ref: '#/components/schemas/meta'
     success:
       type: object
       properties:

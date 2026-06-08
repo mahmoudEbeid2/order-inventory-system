@@ -1,0 +1,14 @@
+type: object
+properties:
+  success:
+    type: boolean
+    example: true
+  message:
+    type: string
+    example: Orders retrieved successfully
+  data:
+    type: array
+    items:
+      $ref: './order.yaml'
+  meta:
+    $ref: './meta.yaml'
