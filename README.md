@@ -85,14 +85,14 @@ order-inventory-system/
 
 ## Entity Relationship Diagram (ERD)
 
+### Visual Diagram
+
+<img src="./erd.png" alt="Entity Relationship Diagram" width="100%" />
+
 The database schema contains the following relationships:
 * **User & Order**: A user can place multiple orders (`1-to-many` relationship, user is optional in order context).
 * **Order & OrderItem**: An order contains one or more line items (`1-to-many` relationship, required for order).
 * **Product & OrderItem**: A product can be referenced in multiple order items (`1-to-many` relationship, optional for product).
-
-### Visual Diagram
-
-<img src="./erd.png" alt="Entity Relationship Diagram" width="100%" />
 
 ### Interactive Mermaid ERD
 
