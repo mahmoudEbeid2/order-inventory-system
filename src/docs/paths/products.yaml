@@ -1,0 +1,127 @@
+get:
+  tags:
+    - Products
+  summary: List active products
+  description: Retrieve a paginated and filtered list of active (non-deleted) products.
+  parameters:
+    - name: page
+      in: query
+      description: Page number
+      schema:
+        type: string
+        default: "1"
+    - name: limit
+      in: query
+      description: Items per page
+      schema:
+        type: string
+        default: "10"
+    - name: sort
+      in: query
+      description: Sorting criteria (e.g. price, -createdAt)
+      schema:
+        type: string
+    - name: search
+      in: query
+      description: Search query (matches sku or name)
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Products retrieved successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Products retrieved successfully
+              data:
+                type: array
+                items:
+                  $ref: '../components/product.yaml'
+              meta:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                    example: 5
+                  page:
+                    type: integer
+                    example: 1
+                  limit:
+                    type: integer
+                    example: 10
+                  totalPages:
+                    type: integer
+                    example: 1
+
+post:
+  tags:
+    - Products
+  summary: Create a new product
+  description: Add a new product to the catalog. Restricted to ADMIN.
+  security:
+    - BearerAuth: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - sku
+            - name
+            - price
+            - stockQuantity
+          properties:
+            sku:
+              type: string
+              example: "PROD-004"
+            name:
+              type: string
+              example: "Mechanical Keyboard"
+            price:
+              type: number
+              example: 89.99
+            stockQuantity:
+              type: integer
+              example: 50
+  responses:
+    '201':
+      description: Product created successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Product created successfully
+              data:
+                $ref: '../components/product.yaml'
+    '400':
+      description: Validation Failed / Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '401':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '403':
+      description: Forbidden (Only ADMIN can access)
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'

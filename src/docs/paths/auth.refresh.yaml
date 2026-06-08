@@ -1,0 +1,49 @@
+post:
+  tags:
+    - Auth
+  summary: Refresh Access Token
+  description: Use a valid refresh token to obtain a new access token.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - refreshToken
+          properties:
+            refreshToken:
+              type: string
+              example: "eyJhbGciOiJIUzI1NiIsIn..."
+  responses:
+    '200':
+      description: Token refreshed successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Token refreshed successfully
+              data:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                    example: "eyJhbGciOiJIUzI1NiIsIn..."
+    '400':
+      description: Missing refresh token
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '401':
+      description: Invalid or expired refresh token
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'

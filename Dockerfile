@@ -9,7 +9,7 @@ COPY package*.json ./
 # Stage 2: Development (For local execution)
 # -----------------------
 FROM base AS development
-RUN npm install --loglevel=error
+RUN npm ci --loglevel=error
 COPY . .
 
 # Fix Windows line endings and set execution permissions for start script

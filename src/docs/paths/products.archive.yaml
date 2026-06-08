@@ -1,0 +1,75 @@
+get:
+  tags:
+    - Products
+  summary: List soft-deleted products (Archive)
+  description: Retrieve a paginated and filtered list of soft-deleted products. Restricted to ADMIN.
+  security:
+    - BearerAuth: []
+  parameters:
+    - name: page
+      in: query
+      description: Page number
+      schema:
+        type: string
+        default: "1"
+    - name: limit
+      in: query
+      description: Items per page
+      schema:
+        type: string
+        default: "10"
+    - name: sort
+      in: query
+      description: Sorting criteria
+      schema:
+        type: string
+    - name: search
+      in: query
+      description: Search query
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Archived products retrieved successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Archived products retrieved successfully
+              data:
+                type: array
+                items:
+                  $ref: '../components/product.yaml'
+              meta:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                    example: 2
+                  page:
+                    type: integer
+                    example: 1
+                  limit:
+                    type: integer
+                    example: 10
+                  totalPages:
+                    type: integer
+                    example: 1
+    '401':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '403':
+      description: Forbidden (Only ADMIN can access)
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'

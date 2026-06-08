@@ -6,8 +6,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/src/server.js",
-    "dev": "nodemon -L --watch src --ext ts,js --exec node --loader ts-node/esm src/server.ts",
-    "docs:export": "redocly bundle src/docs/swagger.yaml -o src/docs/bundled.yaml && openapi2postmanv2 -s src/docs/bundled.yaml -o src/docs/postman_collection.json -p -c postman_config.json"
+    "dev": "nodemon -L --watch src --ext ts,js --exec npx tsx src/server.ts",
+    "docs:export": "redocly bundle src/docs/swagger.yaml -o src/docs/bundled.yaml && openapi2postmanv2 -s src/docs/bundled.yaml -o src/docs/postman_collection.json -p -c postman_config.json",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "Mahmoud Ebeid",
@@ -17,12 +18,17 @@
     "@apidevtools/json-schema-ref-parser": "^15.3.5",
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
+    "bcryptjs": "^2.4.3",
     "bullmq": "^5.78.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-rate-limit": "^8.5.2",
+    "ioredis": "^5.11.1",
     "js-yaml": "^4.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "nodemailer": "^8.0.10",
+    "pdfkit": "^0.19.0",
     "pg": "^8.11.10",
     "prisma": "^7.8.0",
     "swagger-ui-express": "^5.0.1",
@@ -30,18 +36,27 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.0",
+    "@types/ioredis": "^4.28.10",
     "@types/jest": "^29.5.14",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^22.10.1",
+    "@types/nodemailer": "^8.0.0",
+    "@types/pdfkit": "^0.17.6",
     "@types/pg": "^8.11.10",
     "@types/supertest": "^6.0.2",
     "@types/swagger-ui-express": "^4.1.7",
     "jest": "^29.7.0",
     "nodemon": "^2.0.22",
     "supertest": "^7.0.0",
-    "ts-jest": "^29.2.5",
+    "ts-jest": "^29.4.11",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "prisma": {
+    "seed": "npx tsx prisma/seed.ts"
   }
 }

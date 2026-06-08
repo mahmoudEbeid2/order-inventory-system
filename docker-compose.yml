@@ -1,14 +1,14 @@
 services:
-  app:
-    container_name: order-inventory-app
-    build:
-      context: .
-    restart: always
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_started
+#   app:
+#     container_name: order-inventory-app
+#     build:
+#       context: .
+#     restart: always
+#     depends_on:
+#       postgres:
+#         condition: service_healthy
+#       redis:
+#         condition: service_started
 
   postgres:
     image: postgres:18

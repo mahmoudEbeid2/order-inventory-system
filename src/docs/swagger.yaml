@@ -1,10 +1,42 @@
 openapi: 3.0.0
 
 info:
-  title: Order API
+  title: Order & Inventory Management System API
   version: 1.0.0
-  description: API for managing documents in the order application.
+  description: API documentation for the Order and Inventory Management System.
 
 servers:
-  - url: http://localhost:3000/
-    description: Development server
+  - url: http://localhost:3000/api
+    description: Development Server
+
+paths:
+  /auth/signup:
+    $ref: './paths/auth.signup.yaml'
+  /auth/login:
+    $ref: './paths/auth.login.yaml'
+  /auth/refresh:
+    $ref: './paths/auth.refresh.yaml'
+  /products:
+    $ref: './paths/products.yaml'
+  /products/archive:
+    $ref: './paths/products.archive.yaml'
+  /products/{id}:
+    $ref: './paths/products.detail.yaml'
+  /orders:
+    $ref: './paths/orders.yaml'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    SuccessResponse:
+      $ref: './components/success.yaml'
+    ErrorResponse:
+      $ref: './components/error.yaml'
+    AuthResponse:
+      $ref: './components/auth.response.yaml'
+    OrderResponse:
+      $ref: './components/order.yaml'

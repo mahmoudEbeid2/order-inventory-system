@@ -1,0 +1,53 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    example: "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d"
+  userId:
+    type: string
+    format: uuid
+    example: "a3cdfb8a-7d2d-48e0-bb15-0d2d3e1d3e8e"
+  status:
+    type: string
+    enum: [PENDING, COMPLETED, CANCELLED]
+    example: "PENDING"
+  totalAmount:
+    type: number
+    example: 179.98
+  createdAt:
+    type: string
+    format: date-time
+    example: "2026-06-08T11:22:00.000Z"
+  updatedAt:
+    type: string
+    format: date-time
+    example: "2026-06-08T11:22:00.000Z"
+  items:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "f8c5b5bb-7b89-4a37-b715-4fa1b5ef970c"
+        productId:
+          type: string
+          format: uuid
+          example: "d5cbb1fa-4fbb-49e0-811c-c7662b2e88a0"
+        quantity:
+          type: integer
+          example: 2
+        priceAtPurchase:
+          type: number
+          example: 89.99
+        product:
+          type: object
+          properties:
+            name:
+              type: string
+              example: "Mechanical Keyboard"
+            sku:
+              type: string
+              example: "KEYB-MECH-01"

@@ -1,0 +1,46 @@
+post:
+  tags:
+    - Auth
+  summary: Register a new user
+  description: Create a new customer account.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - name
+            - email
+            - password
+          properties:
+            name:
+              type: string
+              example: "Jane Doe"
+            email:
+              type: string
+              format: email
+              example: "jane@example.com"
+            password:
+              type: string
+              format: password
+              example: "password123"
+  responses:
+    '201':
+      description: User registered successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../components/auth.response.yaml'
+    '400':
+      description: Bad Request / Validation Failed
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '409':
+      description: Conflict - Email already exists
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'

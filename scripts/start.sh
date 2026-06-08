@@ -11,6 +11,9 @@ npx prisma generate
 echo " Syncing Database with Prisma schema..."
 npx prisma migrate deploy
 
+echo " Seeding database..."
+npx prisma db seed
+
 echo " Starting the server..."
 if [ "$NODE_ENV" = "development" ]; then
   exec npm run dev

@@ -1,0 +1,42 @@
+post:
+  tags:
+    - Auth
+  summary: User Login
+  description: Authenticate user credentials and return access and refresh tokens.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - email
+            - password
+          properties:
+            email:
+              type: string
+              format: email
+              example: "admin@example.com"
+            password:
+              type: string
+              format: password
+              example: "admin123"
+  responses:
+    '200':
+      description: Login successful
+      content:
+        application/json:
+          schema:
+            $ref: '../components/auth.response.yaml'
+    '400':
+      description: Validation Failed
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '401':
+      description: Invalid email or password
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'

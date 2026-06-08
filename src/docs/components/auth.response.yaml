@@ -1,0 +1,34 @@
+type: object
+properties:
+  success:
+    type: boolean
+    example: true
+  message:
+    type: string
+    example: Login successful
+  data:
+    type: object
+    properties:
+      user:
+        type: object
+        properties:
+          id:
+            type: string
+            format: uuid
+            example: "d3b07384-d113-49cd-a5d6-8cf616f73e72"
+          name:
+            type: string
+            example: "Admin User"
+          email:
+            type: string
+            example: "admin@example.com"
+          role:
+            type: string
+            enum: [ADMIN, CUSTOMER]
+            example: "ADMIN"
+      accessToken:
+        type: string
+        example: "eyJhbGciOiJIUzI1NiIsIn..."
+      refreshToken:
+        type: string
+        example: "eyJhbGciOiJIUzI1NiIsIn..."

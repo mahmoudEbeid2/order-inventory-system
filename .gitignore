@@ -38,6 +38,7 @@ Thumbs.db
 *.bak
 
 # Uploads
+uploads
 public/uploads/*
 !public/uploads/.gitkeep
 # Local-only scripts (not committed)

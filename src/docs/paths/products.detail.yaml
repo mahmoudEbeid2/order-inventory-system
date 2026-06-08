@@ -1,0 +1,158 @@
+get:
+  tags:
+    - Products
+  summary: Get product by ID
+  description: Retrieve detailed information for a single active product by its ID.
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: The product ID
+      schema:
+        type: string
+        format: uuid
+  responses:
+    '200':
+      description: Product retrieved successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Product retrieved successfully
+              data:
+                $ref: '../components/product.yaml'
+    '404':
+      description: Product not found
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+
+put:
+  tags:
+    - Products
+  summary: Update product details
+  description: Modify properties of an existing product. Restricted to ADMIN.
+  security:
+    - BearerAuth: []
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: The product ID
+      schema:
+        type: string
+        format: uuid
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            sku:
+              type: string
+              example: "PROD-004-UPDATED"
+            name:
+              type: string
+              example: "Updated Mouse Name"
+            price:
+              type: number
+              example: 29.99
+            stockQuantity:
+              type: integer
+              example: 120
+  responses:
+    '200':
+      description: Product updated successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Product updated successfully
+              data:
+                $ref: '../components/product.yaml'
+    '400':
+      description: Validation Failed
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '401':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '404':
+      description: Product not found
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+
+delete:
+  tags:
+    - Products
+  summary: Soft delete a product
+  description: Mark a product as deleted in the catalog. Restricted to ADMIN.
+  security:
+    - BearerAuth: []
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: The product ID
+      schema:
+        type: string
+        format: uuid
+  responses:
+    '200':
+      description: Product deleted successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Product deleted successfully
+    '401':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'
+    '404':
+      description: Product not found
+      content:
+        application/json:
+          schema:
+            $ref: '../components/error.yaml'

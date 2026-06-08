@@ -1,0 +1,29 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    example: "a3f01c89-281b-4f51-b847-cf42d38e217e"
+  sku:
+    type: string
+    example: "PROD-746382"
+  name:
+    type: string
+    example: "Wireless Mouse"
+  price:
+    type: string
+    example: "25.99"
+  stockQuantity:
+    type: integer
+    example: 100
+  isDeleted:
+    type: boolean
+    example: false
+  createdAt:
+    type: string
+    format: date-time
+    example: "2026-06-08T12:00:00.000Z"
+  updatedAt:
+    type: string
+    format: date-time
+    example: "2026-06-08T12:05:00.000Z"

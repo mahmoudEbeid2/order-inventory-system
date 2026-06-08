@@ -6,6 +6,10 @@ datasource db {
   provider = "postgresql"
 }
 
+enum Role {
+  ADMIN
+  CUSTOMER
+}
 
 enum OrderStatus {
   PENDING
@@ -13,32 +17,39 @@ enum OrderStatus {
   CANCELLED
 }
 
+/// Represents a system user (ADMIN or CUSTOMER) for authentication and access control.
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  password  String
-  orders    Order[]
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
+  id         String   @id @default(uuid())
+  name       String
+  email      String   @unique
+  password   String
+  role       Role     @default(CUSTOMER)
+  resetToken String?  @map("reset_token")
+  orders     Order[]
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
 
   @@map("users")
 }
 
+/// Represents a catalog product. Utilizes isDeleted flag for safe soft-delete.
 model Product {
   id            String      @id @default(uuid())
-  // use partial unique index for soft delete handling
   sku           String     
   name          String
   price         Decimal    
   stockQuantity Int         @map("stock_quantity")
+  /// soft delete flag to prevent database delete cascade issues
   isDeleted     Boolean     @default(false) @map("is_deleted")
   orderItems    OrderItem[] 
   createdAt     DateTime    @default(now()) @map("created_at")
   updatedAt     DateTime    @updatedAt @map("updated_at")
 
+  @@index([sku])
   @@map("products")
 }
 
+/// Represents a customer order tracking its status and total amount.
 model Order {
   id          String      @id @default(uuid())
   userId      String      @map("user_id")
@@ -49,9 +60,11 @@ model Order {
   createdAt   DateTime    @default(now()) @map("created_at")
   updatedAt   DateTime    @updatedAt @map("updated_at")
 
+  @@index([status])
   @@map("orders")
 }
 
+/// Represents a purchase line item mapping order details to products.
 model OrderItem {
   id              String   @id @default(uuid())
   orderId         String   @map("order_id")
@@ -59,6 +72,7 @@ model OrderItem {
   productId       String   @map("product_id")
   product         Product  @relation(fields: [productId], references: [id])
   quantity        Int
+  /// locked price at purchase to ensure historical price consistency
   priceAtPurchase Decimal  @map("price_at_purchase") 
 
   @@map("order_items")
