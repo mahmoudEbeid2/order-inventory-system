@@ -4,6 +4,8 @@ import { validate } from "../middlewares/validation.js";
 import { authenticateJWT, authorizeRoles } from "../middlewares/auth.js";
 import { createProductSchema, updateProductSchema, getProductsQuerySchema } from "../validators/product.validator.js";
 
+import { idempotency } from "../middlewares/idempotency.js";
+
 const router = express.Router();
 
 // Public route to view products
@@ -15,7 +17,7 @@ router.get("/archive", authenticateJWT, authorizeRoles("ADMIN"), validate(getPro
 // Public route to get a single product by ID
 router.get("/:id", getProductById);
 
-router.post("/", authenticateJWT, authorizeRoles("CUSTOMER"), validate(createProductSchema), createProduct);
+router.post("/", authenticateJWT, authorizeRoles("CUSTOMER"), idempotency, validate(createProductSchema), createProduct);
 router.put("/:id", authenticateJWT, authorizeRoles("ADMIN"), validate(updateProductSchema), updateProduct);
 router.delete("/:id", authenticateJWT, authorizeRoles("ADMIN"), deleteProduct);
 
