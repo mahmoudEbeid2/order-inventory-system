@@ -6,8 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/src/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "start:dev": "npm run dev",
+    "dev": "nodemon --watch src --ext ts,js --exec node --loader ts-node/esm src/server.ts",
     "docs:export": "redocly bundle src/docs/swagger.yaml -o src/docs/bundled.yaml && openapi2postmanv2 -s src/docs/bundled.yaml -o src/docs/postman_collection.json -p -c postman_config.json"
   },
   "keywords": [],
