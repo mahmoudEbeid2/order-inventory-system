@@ -90,6 +90,10 @@ The database schema contains the following relationships:
 * **Order & OrderItem**: An order contains one or more line items (`1-to-many` relationship, required for order).
 * **Product & OrderItem**: A product can be referenced in multiple order items (`1-to-many` relationship, optional for product).
 
+### Visual Diagram
+
+<img src="./erd.png" alt="Entity Relationship Diagram" width="100%" />
+
 ### Interactive Mermaid ERD
 
 ```mermaid
@@ -137,10 +141,6 @@ erDiagram
         decimal priceAtPurchase
     }
 ```
-
-### Visual Diagram
-
-<img src="./erd.png" alt="Entity Relationship Diagram" width="100%" />
 
 ---
 
