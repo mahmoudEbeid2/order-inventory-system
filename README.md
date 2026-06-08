@@ -403,11 +403,11 @@ Interactive API documentation is served directly by the Express application:
   - `GET /api/products` - Retrieve active catalog (paginated & filtered).
   - `GET /api/products/archive` - Retrieve soft-deleted product list (ADMIN only).
   - `GET /api/products/:id` - Fetch single active product details.
-  - `POST /api/products` - Add new product (CUSTOMER only, requires `X-Idempotency-Key`).
+  - `POST /api/products` - Add new product (ADMIN only, requires `X-Idempotency-Key`).
   - `PUT /api/products/:id` - Update catalog price/stock (ADMIN only).
   - `DELETE /api/products/:id` - Soft delete a catalog item (ADMIN only).
 * **Orders**:
-  - `POST /api/orders` - Atomic checkout transaction (ADMIN/CUSTOMER, rate-limited, requires `X-Idempotency-Key`).
+  - `POST /api/orders` - Atomic checkout transaction (CUSTOMER only, rate-limited, requires `X-Idempotency-Key`).
   - `GET /api/orders` - Filtered & paginated order histories (ownership enforced).
 
 ---
