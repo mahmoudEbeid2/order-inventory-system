@@ -1,7 +1,7 @@
 import type { Request, Response, NextFunction, RequestHandler } from "express";
-import type { AnyZodObject } from "zod";
+import type { ZodObject } from "zod";
 
-export const validate = (schema: AnyZodObject): RequestHandler => {
+export const validate = (schema: ZodObject<any, any>): RequestHandler => {
   return async (
     req: Request,
     res: Response,
@@ -15,9 +15,15 @@ export const validate = (schema: AnyZodObject): RequestHandler => {
       });
 
       // Inject parsed/validated data (keeps only fields defined in schema)
-      req.body = parsed.body;
-      req.query = parsed.query;
-      req.params = parsed.params;
+      if (parsed.body !== undefined) {
+        req.body = parsed.body;
+      }
+      if (parsed.query !== undefined) {
+        req.query = parsed.query as any;
+      }
+      if (parsed.params !== undefined) {
+        req.params = parsed.params as any;
+      }
 
       next();
     } catch (error) {
